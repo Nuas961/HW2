@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*загловок и текст повторяются, но у них разные шрифты*/
+h1, h3 {
+    font-family: 'Zilla Slab', serif;
+}
+
+p, span {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*HEADER*/
+.header, 
+.main,
+.section,
+.footer {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;   
+}
+  
+.header img,
+.main img,
+.footer-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+.header-text,
+.section-text {
+    text-align: center;
+    z-index: 1;
+    font-weight: bold;
+}
+  
+.header-text h1,
+.main-text h3,
+.section-text h3,
+.footer-block h3 {
+    font-size: 44px;
+    margin-bottom: 30px;
+    color: white;
+}
+  
+.header-text p,
+.main-text p, 
+.section-text p,
+.footer-clock__text, 
+.footer-comment__text {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: white;
+}
+  
+.header-button__container, 
+.main-button__container{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;  
+    cursor: pointer;  
+}
+  
+.button-1,
+.button-2, 
+.main-button__container-1,
+.main-button__container-2,
+.footer-block__button {
+    border-radius: 50px;
+    padding: 15px 45px;
+    margin: 0 10px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, #F27A54 -21.05%, #A154F2 121.05%);
+    color: white;
+  }
+
+  .button-2, 
+  .main-button__container-2 {
+    background: none;
+    border: 2px solid rgb(250, 250, 250);
+  }
+
+/*MAIN*/
+.main-text {
+    margin-right: 650px;
+}
+
+.main-text h3 {
+    margin-left: 20px;
+}
+
+.main-text p {
+    margin-left: 20px;
+    word-spacing: 5px;
+}
+
+.main-button__container {
+    margin-right: 150px;
+}
+
+.main .main-img {
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    margin: 90px 0px 0px 650px;
+}
+
+.main-button__container-1 {
+    color: black;
+    background: white;
+}
+
+/*SECTION BLOCK*/
+.section img {
+    position: absolute;    
+}
+
+.background-fon__1,
+.background-video__1 {
+    width: 700px; 
+}
+
+.background-fon__1 {
+    margin-right: 650px;
+    margin-top: 77px;
+    height: 760px;
+}
+
+.background-video__1 {
+    margin-left: 660px;
+    height: 100%;
+}
+
+.section-text {
+    margin: 0px 700px 0px 0px;
+}
+
+.section-button__1 {
+    border-radius: 50px;
+    padding: 15px 55px;
+    margin: 0 10px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    background: white;
+}
+
+/*FOOTER*/
+.footer-img {
+    margin: -10px 0px 0px 0px;
+}
+
+.footer-arrow {
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.footer-block h3 {
+    margin: 30px 0px 0px 0px;
+}
+  
+.footer-arrow__icon,
+.footer-clock__icon, 
+.footer-comment__icon {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-block__button {
+    border-radius: 10px;
+    padding: 8px 15px;
+    margin: 0 10px;
+    font-size: 15px;
+    border: none;
+}
+
+.footer-clock__icon,
+.footer-comment__icon {  
+    margin-right: 5px;
+}
+
+.footer-clock__text, 
+.footer-comment__text {
+    font-style: italic;
+}
+ 
+.footer-clock {
+    margin: 30px 200px 0px 0px;
+}
+
+.footer-comment {
+    margin: -25px 0px 0px 140px;
+}
